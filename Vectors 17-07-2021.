@@ -1,0 +1,32 @@
+import java.util.*;
+class Menu1
+{
+  public static void main (String[]args)
+  {
+    Scanner sc = new Scanner (System.in);
+    Vector v = new Vector ();
+      v.add (101);
+      v.add ("Rama");
+      v.add (6.58);
+      v.add (102);
+      v.add ("Gita");
+      v.add (8.98);
+      System.out.println (v);
+      v.remove ("Gita");
+      System.out.println (v);;
+      v.set (2, 9.17);
+      System.out.println (v);
+    if (v.contains ("sita"))
+        System.out.println ("FOUND");
+    else
+        System.out.println ("FALSE");
+  }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OUTPUT:
+C:\Users\hp>javac Menu1
+C:\Users\hp>java Menu1
+[101, Rama, 6.58, 102, Gita, 8.98]
+[101, Rama, 6.58, 102, 8.98]
+[101, Rama, 9.17, 102, 8.98]
+FALSE
